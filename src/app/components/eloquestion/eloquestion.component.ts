@@ -16,7 +16,8 @@ export class EloquestionComponent {
   }
   surveyComplete (sender: { data: any; }) {
     saveSurveyResults(
-      "https://apisondage.azurewebsites.net/api/questions",
+      // "https://apisondage.azurewebsites.net/api/questions",
+      "",
       sender.data
     )
   }

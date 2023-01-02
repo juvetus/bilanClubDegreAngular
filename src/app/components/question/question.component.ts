@@ -20,7 +20,8 @@ export class QuestionComponent {
    surveyComplete (sender: { data: any; }) {
     saveSurveyResults(
       // "https://localhost:7238/api/Questions/",
-      "https://apisondage.azurewebsites.net/api/questions",
+      // "https://apisondage.azurewebsites.net/api/questions",
+      "",
       sender.data
     )
   }
