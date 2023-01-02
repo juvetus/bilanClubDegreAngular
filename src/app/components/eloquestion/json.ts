@@ -1,6 +1,6 @@
 export const surveyJson = {
     "title": "Préparation thèse fin d'études.",
-    "description": "L'objectif de ce travail est de tirer les leçons d'un projet antérieur dans l'entreprise (Club Degree plus).Ce sondage me permettra de rédiger un compte rendu de ce projet dans le cadre de la préparation de ma thèse finale. ",
+    "description": "L'objectif de ce travail est de tirer les leçons d'un projet antérieur dans l'entreprise (Club Degré plus). Ce sondage me permettra de rédiger un compte rendu de ce projet dans le cadre de la préparation de ma thèse finale. ",
      "logo": "assets/logo.png",
     
     "logoWidth": 250,

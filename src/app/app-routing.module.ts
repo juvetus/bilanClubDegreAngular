@@ -6,10 +6,10 @@ import { EloquestionComponent } from './components/eloquestion/eloquestion.compo
 import { QuestionComponent } from './components/question/question.component';
 
 const routes: Routes = [
-   { path: '',   redirectTo: '/question', pathMatch: 'full' },
-  { path: 'question', component: QuestionComponent },
-  { path: 'edit-question', component: EditQuestionComponent },
-  {path: 'eloquestion', component:EloquestionComponent}
+   { path: '',   redirectTo: '/sondageun', pathMatch: 'full' },
+  { path: 'sondageun', component: QuestionComponent },
+  { path: 'result', component: EditQuestionComponent },
+  {path: 'sondagedeux', component:EloquestionComponent}
   
 ];
 

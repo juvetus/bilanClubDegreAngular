@@ -15,30 +15,38 @@ StylesManager.applyTheme("defaultV2");
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent {
+  model!: Model;
   questions : Question[] = [];
   questToEdit?:Question;
   private url = "questions";
    SURVEY_ID = 1;
+   
    surveyComplete (sender: { data: any; }) {
     saveSurveyResults(
      
        "https://apisondage.azurewebsites.net/api/questions",
       // `${environment.apiUrl}/${this.url}`,
+      
       sender.data
     )
   }
   
-  model!: Model;
+ 
   constructor(private api : SuperQuestionService){}
 
   ngOnInit(): void {
   
     const servey = new Model(surveyJson)
+   
+    
+  
     this.model = servey;
     servey.onComplete.add(this.surveyComplete)
    // this.api.createHero(se)
     // servey.onComplete.add(this.alertResults)
     console.log(servey)
+   
+    
     
   }
 
@@ -60,4 +68,9 @@ function saveSurveyResults(url: string, surveyJson: any) {
   request.send(JSON.stringify(surveyJson));
   console.log('servey', surveyJson)
 }
+
+
+
+
+
 
