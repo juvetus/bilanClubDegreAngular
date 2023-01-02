@@ -1,21 +1,22 @@
 export const surveyJson = {
-    "title": "Memoire Fin d'étude",
-    "description": "L'objectif de ce travail est de tirer les leçons d'un projet précédemment réalisé au sein de l'entreprise, et donc terminé et sur lequel vous n’êtes pas intervenu. De plus, il est accompagné d'une dimension économique. Ce document définit un cadre de référence pour mener à bien cette mission. Selon la nature  de l'entreprise et du projet choisi, il est nécessaire de redimensionner le périmètre d'études. Les items listés ci-dessous ne sont pas exhaustifs, mais ils donnent une structure partielle du rapport. Les grands titres doivent être respectés. ",
-     "logo": "assets/logo1.jpg",
+    "title": "Préparation thèse fin d'études.",
+    "description": "L'objectif de ce travail est de tirer les leçons d'un projet antérieur dans l'entreprise (Club Degree plus).Ce sondage me permettra de rédiger un compte rendu de ce projet dans le cadre de la préparation de ma thèse finale. ",
+     "logo": "assets/logo.png",
     
-    "logoWidth": 100,
+    "logoWidth": 250,
     "logoHeight": 100,
  
     pages: [
      {
        "name": "title",
-       "title": " Bilan du projet Club Degré Plus ",
+       "title": " Bilan Club Degré Plus : Dimension économique. ",
        "elements": [
         {
           "name": "nom",
          "title": "Nom",
          "type": "text",
          "description": "Entrez votre Nom",
+         isRequired: true
        },
        {
          "type": "text",
@@ -23,6 +24,7 @@ export const surveyJson = {
          "title": "Prénom",
          "description": "Entrez votre Prénom",
          "startWithNewLine": false,
+         isRequired: true
        },
        
          {
@@ -53,34 +55,3 @@ export const surveyJson = {
    
    };
 
-// export const surveyJson = {
-//     "title": "Memoire Fin d'étude",
-//     "description": "L'objectif de ce travail est de tirer les leçons d'un projet précédemment réalisé au sein de l'entreprise, et donc terminé et sur lequel vous n’êtes pas intervenu. De plus, il est accompagné d'une dimension économique. Ce document définit un cadre de référence pour mener à bien cette mission. Selon la nature  de l'entreprise et du projet choisi, il est nécessaire de redimensionner le périmètre d'études. Les items listés ci-dessous ne sont pas exhaustifs, mais ils donnent une structure partielle du rapport. Les grands titres doivent être respectés. ",
-//      "logo": "assets/logo1.jpg",
-    
-//     "logoWidth": 100,
-//     "logoHeight": 100,
-//     pages:[
-//         {"name":"",
-            
-//         "elements": [
-//             {
-//               "type": "multipletext",
-//               "name": "pricelimit",
-//               "title": "What is the... ",
-//               "items": [
-//                 {
-//                   "name": "mostamount",
-//                   "title": "Most amount you would every pay for a product like ours"
-//                 },
-//                 {
-//                   "name": "leastamount",
-//                   "title": "The least amount you would feel comfortable paying"
-//                 }
-//               ]
-//             }
-//           ]
-//         }
-//     ]
-    
-//   };

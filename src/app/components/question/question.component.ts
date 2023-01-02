@@ -17,8 +17,16 @@ StylesManager.applyTheme("defaultV2");
 export class QuestionComponent {
   questions : Question[] = [];
   questToEdit?:Question;
- 
-
+  private url = "questions";
+   SURVEY_ID = 1;
+   surveyComplete (sender: { data: any; }) {
+    saveSurveyResults(
+     
+       "https://apisondage.azurewebsites.net/api/questions",
+      // `${environment.apiUrl}/${this.url}`,
+      sender.data
+    )
+  }
   
   model!: Model;
   constructor(private api : SuperQuestionService){}
@@ -27,8 +35,9 @@ export class QuestionComponent {
   
     const servey = new Model(surveyJson)
     this.model = servey;
-    servey.onComplete.add(this.api.surveyComplete)
-  
+    servey.onComplete.add(this.surveyComplete)
+   // this.api.createHero(se)
+    // servey.onComplete.add(this.alertResults)
     console.log(servey)
     
   }
@@ -38,5 +47,17 @@ export class QuestionComponent {
   }
 
 }
-
+function saveSurveyResults(url: string, surveyJson: any) {
+  const request = new XMLHttpRequest();
+  request.open('POST', url);
+  request.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+  request.addEventListener('load', () => {
+    // Handle "load"
+  });
+  request.addEventListener('error', () => {
+    // Handle "error"
+  });
+  request.send(JSON.stringify(surveyJson));
+  console.log('servey', surveyJson)
+}
 
