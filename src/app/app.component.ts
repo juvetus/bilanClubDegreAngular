@@ -1,6 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { surveyJson } from './components/question/json';
-import { Question } from './models/question';
+import { Component } from '@angular/core';
+
 import { SuperQuestionService } from './services/super-question.service';
 
 
