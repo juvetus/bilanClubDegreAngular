@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SuperQuestionService } from 'src/app/services/super-question.service';
 
+
 import {  Model } from "survey-core";
 import { surveyJson } from './json';
 
@@ -22,8 +23,8 @@ export class EloquestionComponent {
   }
   surveyComplete (sender: { data: any; }) {
     saveSurveyResults(
-       "https://apisondage.azurewebsites.net/api/questions",
-      // `${environment.apiUrl}/${this.url}`,
+        "https://apisondage.azurewebsites.net/api/questions",
+    
       sender.data
     )
   }

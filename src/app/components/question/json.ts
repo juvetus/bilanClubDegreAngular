@@ -19,10 +19,10 @@ export const surveyJson = {
             isRequired: true
         },
         {
-          "name": "nom",
-          "title": "Prenon",
+          "name": "prenom",
+          "title": "Prénon",
           "type": "text",
-          "description": "Entrez votre Nom",
+          "description": "Entrez votre Prénom",
           "startWithNewLine": false,
           isRequired: true
       },
